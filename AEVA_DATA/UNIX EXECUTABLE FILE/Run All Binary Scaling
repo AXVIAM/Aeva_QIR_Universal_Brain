@@ -1,0 +1,14 @@
+import os
+
+# Define the paths to the scripts
+scripts = [
+    "scripts/QIR_Gravitational_Lensing_Binary.py",
+    "scripts/QIR_Black_Hole_Entropy_Binary.py",
+    "scripts/QIR_Quantum_Uncertainty_Binary.py"
+]
+
+# Run each script sequentially
+for script in scripts:
+    print(f"Running {script}...")
+    os.system(f"python {script}")
+    print(f"Finished running {script}\n")
